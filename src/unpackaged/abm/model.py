@@ -1,9 +1,9 @@
 import random
 
-x0 = 0
-y0 = 0
-x1 = 50
-y1 = 50
+x0 = 4
+y0 = 2
+x1 = 15
+y1 = 20
 rnd_number_0 = random.random()
 rnd_number_1 = random.random()
 
@@ -23,9 +23,9 @@ else:
 
 
 y_diff = (y0 - y1)
-y_diffsq = y_diff * y_diff
+y_diffsq = y_diff **2
 x_diff = (x0 - x1)
-x_diffsq = x_diff * x_diff
+x_diffsq = x_diff **2
 sum = y_diffsq + x_diffsq
 answer = sum**0.5
 print(answer)
