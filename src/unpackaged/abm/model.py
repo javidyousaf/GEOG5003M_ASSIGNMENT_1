@@ -1,31 +1,44 @@
+""" 
+GEOG5003M Programming for Geographical Information Analysis
+Practical: Agent Based Modelling
+Author: Javid Yousaf
+Student id: 201385963
+Date: 02/03/2020
+"""
+
 import random
 
-x0 = 4
-y0 = 2
-x1 = 15
-y1 = 20
-rnd_number_0 = random.random()
-rnd_number_1 = random.random()
+# function to get a random integer from 0 - 99 using the randint function
+# an alternative way would be int(random.random() * 100)
+def getRndNumber():
+    return random.randint(0, 100)
 
-if rnd_number_0 < 0.5:
+
+# set all the initial x & y coordinate to random values
+x0 = getRndNumber()
+y0 = getRndNumber()
+x1 = getRndNumber()
+y1 = getRndNumber()
+
+if getRndNumber() < 50:
     y0 += 1
     x0 += 1
 else:
     y0 -= 1
     x0 -= 1
 
-if rnd_number_1 < 0.5:
+if getRndNumber() < 50:
     y1 += 1
     x1 += 1
 else:
     y1 -= 1
     x1 -= 1
 
-
-y_diff = (y0 - y1)
-y_diffsq = y_diff **2
-x_diff = (x0 - x1)
-x_diffsq = x_diff **2
-sum = y_diffsq + x_diffsq
-answer = sum**0.5
+# calculate distance using Pythagoras
+yDiff = (y0 - y1)
+yDiffsq = yDiff ** 2  # alternatively use math.pow(x,2) to sqare number
+xDiff = (x0 - x1)
+xDiffsq = xDiff ** 2
+sum = yDiffsq + xDiffsq
+answer = sum**0.5  # alternatively use math.sqrt(x) to get the square root
 print(answer)
