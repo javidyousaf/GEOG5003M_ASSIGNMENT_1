@@ -1,4 +1,4 @@
-## GEOG5003M Programming for Geographical Information Analysis
+## ![Image description](images/uol.jpg) GEOG5003M Programming for Geographical Information Analysis
 ### Assignment 1
 
 This repository contains the completed practicals for GEOG5003M:
