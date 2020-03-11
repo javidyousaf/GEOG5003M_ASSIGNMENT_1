@@ -1,4 +1,6 @@
-## ![Image description](images/uol.jpg) GEOG5003M Programming for Geographical Information Analysis
+![University of Leeds](images/uol.jpg)
+
+## GEOG5003M Programming for Geographical Information Analysis
 ### Assignment 1
 
 This repository contains the completed practicals for GEOG5003M:
@@ -11,3 +13,4 @@ This repository contains the completed practicals for GEOG5003M:
 7. [Communicating](src/7-communicating.py)
 8. [Animation/Behaviour](src/8-animation-behaviour.py)
 9. [GUI/Web scraping](src/9-gui-webscraping.py)
+S
