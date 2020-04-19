@@ -11,7 +11,7 @@ import random
 # function to get a random integer from 0 - 99 using the randint function
 # an alternative way would be int(random.random() * 100)
 def getRndNumber():
-    return random.randint(0, 100)
+    return random.randint(0, 99)
 
 
 # set all the initial x & y coordinate to random values
@@ -42,3 +42,4 @@ xDiffsq = xDiff ** 2
 sum = yDiffsq + xDiffsq
 answer = sum**0.5  # alternatively use math.sqrt(x) to get the square root
 print(answer)
+
