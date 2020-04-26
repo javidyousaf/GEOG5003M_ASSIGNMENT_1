@@ -15,10 +15,10 @@ def getRndNumber():
 
 
 # set all the initial x & y coordinate to random values
-x0 = getRndNumber()
-y0 = getRndNumber()
-x1 = getRndNumber()
-y1 = getRndNumber()
+x0 = random.randint(0, 99)
+y0 = random.randint(0, 99)
+x1 = getRndNumber() # using the getRndNumber() function defined above.
+y1 = getRndNumber() # using the getRndNumber() function defined above.
 
 if getRndNumber() < 50:
     y0 += 1
