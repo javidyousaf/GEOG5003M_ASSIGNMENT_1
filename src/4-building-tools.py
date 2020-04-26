@@ -3,7 +3,7 @@ Module: GEOG5003M Programming for Geographical Information Analysis
 Practical: 4 - Building tools
 Author: Javid Yousaf
 Student id: 201385963
-Date: 02/03/2020
+Date: 01/05/2020
 """
 
 import random
@@ -20,7 +20,7 @@ def distance_between(agent_a, agent_b):
     # return math.sqrt(math.pow(agent_a[0] - agent_b[0], 2) + (math.pow(agent_a[1] - agent_b[1], 2)))
 
 
-num_of_agents = 100
+num_of_agents = 300
 num_of_iterations = 100
 agents = []
 
@@ -48,25 +48,42 @@ for j in range(num_of_iterations):
 answer = distance_between(agents[0], agents[1])
 print(answer)
 
-# check distance between every agent against ever other agent:
+# check distance between every agent against every other agent:
 
-# time.clock() no longer works as it has been deprecated see: https://stackoverflow.com/questions/58569361/attributeerror-module-time-has-no-attribute-clock-in-python-3-8.
+# time.clock() no longer works as it has been deprecated
+# see: https://stackoverflow.com/questions/58569361/attributeerror-module-time-has-no-attribute-clock-in-python-3-8.
 # As I am using python 3.8.2 I will use:
 start = time.perf_counter()
 
-minimum_distance = 0
+# The highest value that the minimum distance could theoretically be.
+# Calculated using print (math.sqrt(math.pow(99, 2) + (math.pow(99, 2))))
+minimum_distance = 140
+
+# The lowest value that the minimum distance could theoretically be.
 maximum_distance = 0
 
 for i in range(num_of_agents):
     for j in range(num_of_agents):
-        answer = distance_between(agents[i], agents[j])
-        print(answer)
+
+        if agents[i] != agents[j]: # don't get distance between the same agent
+            distance = distance_between(agents[i], agents[j])
+
+            # set the min and max distance bu comparing to the current agents
+            #        
+            if distance > maximum_distance:
+                maximum_distance = distance
+
+            if distance < minimum_distance:
+                minimum_distance = distance
+
+                print(minimum_distance)
 
 end = time.perf_counter()
 
 # Print execution time for calculating distances between all agents
-print("time = " + str(end - start))
-
+print("Execution time: " + str(end - start))
+print("Maximum distance: " + str(maximum_distance))
+print("Minimum distance: " + str(minimum_distance))
 
 matplotlib.pyplot.ylim(0, 99)
 matplotlib.pyplot.xlim(0, 99)
