@@ -3,7 +3,7 @@ Module: GEOG5003M Programming for Geographical Information Analysis
 Practical: 2 - Code shrinking I
 Author: Javid Yousaf
 Student id: 201385963
-Date: 02/03/2020
+Date: 01/05/2020
 """
 
 import random
@@ -54,7 +54,7 @@ matplotlib.pyplot.xlim(0, 99)
 matplotlib.pyplot.scatter(agents[0][1],agents[0][0])
 matplotlib.pyplot.scatter(agents[1][1],agents[1][0])
 
-# colour the furthest east coordinate red.
+# Colour the furthest east coordinate red.
 furthestEast = max(agents, key=operator.itemgetter(1))
 matplotlib.pyplot.scatter(furthestEast[1], furthestEast[0], color='red')
 
