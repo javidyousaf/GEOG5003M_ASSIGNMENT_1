@@ -11,7 +11,10 @@ This repository contains the completed practicals for GEOG5003M:
 1. Agents!
     1. [model.py](src/agents/model.py)
     1. [agentframework.py](src/agents/agentframework.py)
-1. [I/O](src/6-io.py)
+1. I/O
+    1. [io.py](src/io/6-io.py)
+    1. [model.py](src/io/model.py)
+    1. [agentframework.py](src/io/agentframework.py)
 1. [Communicating](src/7-communicating.py)
 1. [Animation/Behaviour](src/8-animation-behaviour.py)
 1. [GUI/Web scraping](src/9-gui-webscraping.py)
