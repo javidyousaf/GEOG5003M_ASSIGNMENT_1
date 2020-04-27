@@ -32,7 +32,7 @@ with open("assets/in.txt") as f:
 
 # Create the agents list with the environment
 for i in range(num_of_agents):
-    agents.append(agentframework.Agent(environment, neighbourhood))
+    agents.append(agentframework.Agent(environment, agents))
 
 
 # Move the agents.

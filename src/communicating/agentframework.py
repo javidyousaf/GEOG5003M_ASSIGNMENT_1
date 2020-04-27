@@ -7,6 +7,7 @@ Date: 01/05/2020
 """
 
 import random
+import math
 
 
 class Agent:
@@ -55,8 +56,9 @@ class Agent:
                 ave = sum / 2
                 self.store = ave
                 agent.store = ave
-                print("sharing " + str(dist) + " " + str(ave))
+                # print("sharing " + str(dist) + " " + str(ave))
 
 
+    # Calculate distance between using math library import
     def distance_between(self, agent):
-        return (((self._x - agent.x)**2) + ((self._y - agent.y)**2))**0.5
+        return math.sqrt(math.pow(self._x - agent._x, 2) + (math.pow(self._y - agent._y, 2)))
