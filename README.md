@@ -18,6 +18,12 @@ This repository contains the completed practicals for GEOG5003M:
 1. Communicating
     1. [model.py](src/communicating/model.py)
     1. [agentframework.py](src/communicating/agentframework.py)
-1. [Animation/Behaviour](src/8-animation-behaviour.py)
-1. [GUI/Web scraping](src/9-gui-webscraping.py)
+1. Animation/Behaviour
+    1. [animation-behaviour.py](src/animation/animation-behaviour.py)
+    1. [model.py](src/animation/model.py)
+    1. [agentframework.py](src/animation/agentframework.py)
+1. GUI/Web scraping
+    1. [gui-webscraping.py](src/gui-webscraping/gui-webscraping.py)
+    1. [model.py](src/gui-webscraping/model.py)
+    1. [agentframework.py](src/gui-webscraping/agentframework.py)
 
