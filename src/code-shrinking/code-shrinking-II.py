@@ -4,13 +4,15 @@ Practical: 3 - Code shrinking II
 Author: Javid Yousaf
 Student id: 201385963
 Date: 01/05/2020
+
+Description: 
 """
 
 import random
 import operator
 import matplotlib.pyplot
 
-# function to get a random integer from 0 - 99 using the randint function
+# Function to get a random integer from 0 - 99 using the randint function
 # an alternative way would be int(random.random() * 100)
 
 
@@ -24,7 +26,7 @@ agents = []
 # Variable to store the number of agents required.
 num_of_agents = 10
 
-# Variable to store the number of iterations required
+# Variable to store the number of iterations required.
 num_of_iterations = 100
 
 # Loop thorough that amount of times and populate the agents list.
@@ -50,7 +52,7 @@ for j in range(num_of_iterations):
             agents[i][1] = (agents[i][1] - 1) % 100
 
 # Set up the axes for the plot - only need to do this once and not in the loop.
-# this doesnt make the graph big enough to show all the cordinate whent they are moved
+# this doesnt make the graph big enough to show all the cordinate when they are moved.
 matplotlib.pyplot.ylim(0, 99)
 matplotlib.pyplot.xlim(0, 99)
 

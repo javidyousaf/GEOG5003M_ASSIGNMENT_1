@@ -5,7 +5,7 @@ Author: Javid Yousaf
 Student id: 201385963
 Date: 01/05/2020
 
-Description: Modified my Agent/Model interaction so that it animates using the matplotlib.animation library.
+Description: Modified the Agent/Model interaction so that it animates using the matplotlib.animation library.
 """
 
 import random

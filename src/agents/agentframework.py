@@ -15,7 +15,7 @@ class Agent:
         self._y = random.randint(0, 99)
         self._x = random.randint(0, 99)
 
-    # Getters and Setters for x and y property
+    # Getters and Setters for x and y properties
     def get_x(self):
         return self._x
 

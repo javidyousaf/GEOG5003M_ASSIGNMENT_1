@@ -41,8 +41,6 @@ ax = fig.add_axes([0, 0, 1, 1])
 carry_on = True
 
 # function to execute the model - this is called for the GUI menu and the button
-
-
 def run_model():
     animation = matplotlib.animation.FuncAnimation(
         fig, update, frames=gen_function, repeat=False)
@@ -85,6 +83,8 @@ for i in range(num_of_agents):
     agents.append(agentframework.Agent(environment, agents))
 
 
+# The update function is called when the animation runs to update the agents 
+# by invoking move() and eat() methods of the Agent class.
 def update(frame_number):
 
     fig.clear()

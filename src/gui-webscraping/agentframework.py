@@ -4,10 +4,13 @@ Practical: 9 - GUI/Web scraping
 Author: Javid Yousaf
 Student id: 201385963
 Date: 01/05/2020
+
+Description: Standard Agent code that has been developed throughout the practicals
 """
 
 import random
 import math
+
 
 class Agent:
     def __init__(self, environment, agents):
@@ -15,7 +18,7 @@ class Agent:
         self._x = random.randint(0, 99)
         self.environment = environment
         self.agents = agents
-        self.store = 0  # We'll come to this in a second.
+        self.store = 0
 
     # Getters and Setters for x and y property
     def get_x(self):

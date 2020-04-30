@@ -3,7 +3,10 @@
 ## GEOG5003M Programming for Geographical Information Analysis
 ### Assignment 1
 
-This repository contains the completed practicals for GEOG5003M:
+This repository contains the completed practicals for GEOG5003M. The code can be accessed from the table below.
+
+There are mutiple versions of the agent/model scripts to show the changes, as the practicals progress, more clearly.
+
 1. Agent based Modelling
     1. [agent-based-modelling.py](src/agent-based-modelling/agent-based-modelling.py)
 1. Code shrinking I

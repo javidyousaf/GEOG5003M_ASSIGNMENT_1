@@ -10,18 +10,18 @@ import random
 import operator
 import matplotlib.pyplot
 
-# function to get a random integer from 0 - 99 using the randint function
-# an alternative way would be int(random.random() * 100)
+# Function to get a random integer from 0 - 99 using the randint function.
+# An alternative way would be int(random.random() * 100)
 def getRndNumber():
     return random.randint(0, 99)
 
-# create an empty agents list to store all the initial x & y coordinate.
+# Create an empty agents list to store all the initial x & y coordinate.
 agents = []
 
-# append y0 & x0 values to the string.
+# Append y0 & x0 values to the string.
 agents.append([getRndNumber(), getRndNumber()])
 
-# append y1 & x1 values to the string
+# Append y1 & x1 values to the string
 agents.append([getRndNumber(), getRndNumber()])
 
 # The 2D 'agents' list will have this format when printed: [[y0, x0],[y1, x1]]
