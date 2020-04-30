@@ -9,7 +9,6 @@ Date: 01/05/2020
 import random
 import math
 
-
 class Agent:
     def __init__(self, environment, agents):
         self._y = random.randint(0, 99)
