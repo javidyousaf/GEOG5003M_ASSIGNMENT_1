@@ -4,15 +4,19 @@
 ### Assignment 1
 
 This repository contains the completed practicals for GEOG5003M:
-1. [Agent based Modelling](src/1-agent-based-modelling.py)
-1. [Code shrinking I](src/2-code-shrinking-I.py)
-1. [Code shrinking II](src/3-code-shrinking-II.py)
-1. [Building tools](src/4-building-tools.py)
+1. Agent based Modelling
+    1. [agent-based-modelling.py](src/agent-based-modelling/agent-based-modelling.py)
+1. Code shrinking I
+    1. [code-shrinking-I.py](src/code-shrinking/code-shrinking-I.py)
+1. Code shrinking II
+    1. [code-shrinking-II.py](src/code-shrinking/code-shrinking-II.py)    
+1. Building Tools
+    1. [building-tools.py](src/building-tools/building-tools.py)
 1. Agents!
     1. [model.py](src/agents/model.py)
     1. [agentframework.py](src/agents/agentframework.py)
 1. I/O
-    1. [io.py](src/io/6-io.py)
+    1. [io.py](src/io/io.py)
     1. [model.py](src/io/model.py)
     1. [agentframework.py](src/io/agentframework.py)
 1. Communicating
