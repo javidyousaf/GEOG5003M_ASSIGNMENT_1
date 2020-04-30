@@ -25,6 +25,7 @@ import bs4
 I couldn't get the above imports to work so didn't complete the web scraping exercise fully. 
 I tried various solution but wasn't succesfull. The issue is possibly related to the 
 Microsoft python extension for VS Code - I used this environment for all other development.
+This will need some further investigation.
 
 '''
 # create environment
@@ -42,9 +43,8 @@ carry_on = True
 
 # function to execute the model - this is called for the GUI menu and the button
 def run_model():
-    animation = matplotlib.animation.FuncAnimation(
-        fig, update, frames=gen_function, repeat=False)
-    canvas.draw()
+    animation = matplotlib.animation.FuncAnimation(fig, update, frames=gen_function, repeat=False)
+    canvas.draw() # canvas.show() does not work in Python 3.8.2. Used .draw() instead.
 
 
 root = tkinter.Tk()

@@ -20,7 +20,8 @@ num_of_iterations = 100
 num_of_agents = 10
 
 
-# Create the environments list
+# Create the environments list by reading data from a text file.
+# Used the csv import to parse the text file as it is comma seperated.
 with open("assets/in.txt") as f:
     reader = csv.reader(f, quoting=csv.QUOTE_NONNUMERIC)
     for row in reader:

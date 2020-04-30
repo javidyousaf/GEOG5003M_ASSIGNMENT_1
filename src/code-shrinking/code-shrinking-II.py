@@ -64,7 +64,7 @@ for i in range(num_of_agents):
 matplotlib.pyplot.show()
 
 '''
-The code in the part 3 Boundary Effects give an out of range error because because we
+The code in part 3 Boundary Effects give an out of range error because because we
 are trying to reference an index in the data list that is greater than 99 i.e. [j + 1]
 or less than 0 i.e. [i - 1] and this is out of range and don't exist.
 '''

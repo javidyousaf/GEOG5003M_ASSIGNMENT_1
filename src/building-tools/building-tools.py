@@ -68,8 +68,7 @@ for i in range(num_of_agents):
         if agents[i] != agents[j]: # don't get distance between the same agent
             distance = distance_between(agents[i], agents[j])
 
-            # set the min and max distance bu comparing to the current agents
-            #        
+            # Set the min and max distance by comparing to the current agents     
             if distance > maximum_distance:
                 maximum_distance = distance
 
@@ -81,6 +80,7 @@ for i in range(num_of_agents):
 end = time.perf_counter()
 
 # Print execution time for calculating distances between all agents
+# Outputs the maximum and minimum distances that have been computed.
 print("Execution time: " + str(end - start))
 print("Maximum distance: " + str(maximum_distance))
 print("Minimum distance: " + str(minimum_distance))
